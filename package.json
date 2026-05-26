@@ -1,0 +1,19 @@
+{
+  "name": "tron-local-fork",
+  "version": "1.0.0",
+  "description": "TRON local fork for GitHub Codespaces - unlimited fake money, zero risk",
+  "scripts": {
+    "setup": "bash scripts/setup_fork.sh",
+    "start": "bash scripts/start_node.sh",
+    "test": "bash scripts/test_rpc.sh",
+    "deploy": "bash scripts/deploy_contract.py"
+  },
+  "keywords": [
+    "tron",
+    "blockchain",
+    "local-fork",
+    "testing",
+    "codespaces"
+  ],
+  "author": "",
+  "license": "MIT"

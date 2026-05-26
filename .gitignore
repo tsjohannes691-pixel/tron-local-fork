@@ -1,0 +1,32 @@
+# JAR files (large, auto-downloaded)
+FullNode.jar
+Toolkit.jar
+
+# Generated files
+fork.conf
+node_config.conf
+wallets.json
+
+# Database and indexes
+output-directory/
+
+# TRON node logs
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+venv/
+.env
+*.pyc
+__pycache__/
+node_modules/

@@ -1,0 +1,28 @@
+{
+  "name": "TRON Local Fork",
+  "image": "mcr.microsoft.com/devcontainers/java:11-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {}
+  },
+  "forwardPorts": [8090, 18888],
+  "portsAttributes": {
+    "8090": {
+      "label": "TRON RPC",
+      "onAutoForward": "notify"
+    },
+    "18888": {
+      "label": "TRON P2P",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "remoteUser": "vscode",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+      ]
+    }
+  }
+}
